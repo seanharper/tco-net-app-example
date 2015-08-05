@@ -1,0 +1,29 @@
+﻿body {
+    background: white;
+    height: 100%;
+}
+br {
+    margin: 5px 0;
+}
+#wrapper {
+    background: #CCC;
+    width: 100%;
+    width: calc(100% - 120px);
+    margin: 0 auto;
+    padding: 35px;
+    min-height: 400px;
+    position: relative;
+    text-align: center;
+}
+.forms {
+    background: white;
+    border: 1px solid black;
+    border-radius: 15px;
+    box-shadow: 5px 5px 10px 10px rgba(0,0,0, .4);
+    text-align: left;
+    padding: 0 30px 25px;
+    max-width: 450px;
+    margin: 0 15px;
+    display: inline-block;
+    vertical-align: top;
+}
