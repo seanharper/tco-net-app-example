@@ -2,9 +2,6 @@
     background: white;
     height: 100%;
 }
-br {
-    margin: 5px 0;
-}
 #wrapper {
     background: #CCC;
     width: 100%;
@@ -17,13 +14,23 @@ br {
 }
 .forms {
     background: white;
+    min-width: 500px;
     border: 1px solid black;
     border-radius: 15px;
-    box-shadow: 5px 5px 10px 10px rgba(0,0,0, .4);
+    box-shadow: 5px 5px 10px 10px rgba(0,0,0, .25);
     text-align: left;
     padding: 0 30px 25px;
-    max-width: 450px;
-    margin: 0 15px;
-    display: inline-block;
+    margin: 0 auto;
     vertical-align: top;
+}
+.input {
+    display: block;
+    margin: 5px 0;
+}
+.label {
+    font-weight: bold;
+    display: inline;
+}
+.hide {
+    display:none;
 }
