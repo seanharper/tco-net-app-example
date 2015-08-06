@@ -1,31 +1,43 @@
 ﻿body {
-    background: white;
-    height: 100%;
+  background: #E4E4E4;
+  height: 100%;
+  font-family: "Arial", sans-serif;
+  margin: 0;
 }
+
+h3 {
+  margin: 0 auto;
+  color: #1ba9c5;
+  text-align: center;
+}
+
+hr {
+  border-color: #1ba9c5;
+  border-style: solid;
+}
+
 #wrapper {
-    background: #CCC;
-    width: 100%;
-    width: calc(100% - 120px);
-    margin: 0 auto;
-    padding: 35px;
-    min-height: 400px;
-    position: relative;
-    text-align: center;
+  margin: 0 auto;
+  padding: 35px;
+  min-height: 400px;
+  text-align: center;
 }
 .forms {
-    background: white;
-    min-width: 500px;
-    border: 1px solid black;
-    border-radius: 15px;
-    box-shadow: 5px 5px 10px 10px rgba(0,0,0, .25);
-    text-align: left;
-    padding: 0 30px 25px;
-    margin: 0 auto;
-    vertical-align: top;
+  width: 50%;
+  min-width: 200px;
+  max-width: 300px;
+  margin: 0 auto;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px 0px rgba(0,0,0, .25);
+  text-align: left;
+  padding: 25px 30px;
+  vertical-align: top;
 }
 .input {
-    display: block;
-    margin: 5px 0;
+  margin: 5px 0;
+  padding: 5px;
+  width: 95%;
 }
 .label {
     font-weight: bold;
@@ -33,4 +45,31 @@
 }
 .hide {
     display:none;
+}
+.btn {
+  background-color: #1ba9c5;
+  border: none;
+  border-radius: 15px;
+  width: 100%;
+  color: white;
+  font-size: 13px;
+  padding: 7px;
+  margin: 10px 0;
+}
+#json_text {
+  width: 50%;
+  min-width: 200px;
+  /*max-width: 950px;*/
+  position: relative;
+  margin: 0 auto;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px 0px rgba(0,0,0, .25);
+  text-align: center;
+  padding: 25px 30px;
+  vertical-align: top;
+}
+.json {
+    display: inline-block;
+    margin: 0 20px;
 }
