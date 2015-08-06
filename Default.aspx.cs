@@ -90,9 +90,17 @@ public partial class _Default : System.Web.UI.Page
         json_payload.Text = "";
         json_response.Text = "";
         json_payload.Text = ConvertToJson(payload);
-
-        Sale sale = Sale.create(payload);
-        json_response.Text = ConvertToJson(sale);
+        try
+        {
+            Sale sale = Sale.create(payload);
+            json_response.Text = ConvertToJson(sale);
+        }
+        catch (TwoCheckoutException tco_e)
+        {
+            json_response.Text = "ERROR\n\n";
+            json_response.Text += tco_e.Message;
+        }
+        
     }
 
     private Dictionary<string, object> buildPayload()
